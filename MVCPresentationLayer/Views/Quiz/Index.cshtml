@@ -1,0 +1,19 @@
+﻿@model IEnumerable<DataObjects.PlayerLevelCategory>
+
+@{
+    ViewBag.Title = "Main Quiz";
+}
+
+<ul>
+    @foreach (var a in Model)
+    {
+        <li>
+            <label>@a.LevelId</label>
+            <label>@a.Level</label>
+            <label>@a.Unlocked</label>
+        </li>
+    }
+
+</ul>
+
+

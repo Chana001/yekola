@@ -107,7 +107,6 @@ namespace PresentationLayer
                 
             }
 
-
             gameSummaryList.ItemsSource = playerSummary;
 
         }

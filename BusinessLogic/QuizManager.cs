@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic
 {
-    public class QuizManager
+    public class QuizManager : IQuizManager
     {
         public static List<int> alreadySelected;
 
@@ -53,7 +53,7 @@ namespace BusinessLogic
             return result;
         }
 
-        public static List<Category> retrieveCategories()
+        public List<Category> retrieveCategories()
         {
             var categoryList = new List<Category>();
 
@@ -234,5 +234,6 @@ namespace BusinessLogic
 
 
         }
+
     }
 }

@@ -12,3 +12,10 @@ C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\DataAccessLayer\bin\De
 C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\bin\Debug\DataObjects.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\bin\Debug\DataObjects.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
