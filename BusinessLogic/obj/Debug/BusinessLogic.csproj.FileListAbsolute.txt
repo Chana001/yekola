@@ -1,0 +1,18 @@
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataAccessLayer.dll
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataObjects.dll
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataAccessLayer.pdb
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataObjects.pdb
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Mike T\Documents\Visual Studio 2013\Projects\YEKOLACONGO\Yekola\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataAccessLayer.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataObjects.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataAccessLayer.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\bin\Debug\DataObjects.pdb
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Mike T\Desktop\NATACHAILUNGA!\YEKOLACONGO\Yekola\BusinessLogic\obj\Debug\BusinessLogic.pdb

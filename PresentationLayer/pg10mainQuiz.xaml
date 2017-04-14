@@ -1,0 +1,142 @@
+﻿<Page x:Class="PresentationLayer.pg10mainQuiz"
+	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	  mc:Ignorable="d" 
+	  d:DesignHeight="432" d:DesignWidth="1040"
+	Title="pg10mainQuiz">
+
+	<Grid Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+			<ColumnDefinition Width="65"/>
+		</Grid.ColumnDefinitions>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+			<RowDefinition Height="36"/>
+		</Grid.RowDefinitions>
+
+		<!--Game Information-->
+		<StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">
+			<StackPanel Orientation="Horizontal">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="80"/>
+						<ColumnDefinition Width="120"/>
+					</Grid.ColumnDefinitions>
+
+					<!--Level-->
+					<TextBlock Grid.Column="0">
+						Level:
+					</TextBlock>
+					<!--End of Level-->
+
+					<!--Level-->
+					<TextBlock Name="txtlevel" Grid.Column="2" >
+						_level
+					</TextBlock>
+					<!--End of Level-->
+				</Grid>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="80"/>
+						<ColumnDefinition Width="120"/>
+					</Grid.ColumnDefinitions>
+
+					<!--Level-->
+					<TextBlock Grid.Column="0">
+						Category:
+					</TextBlock>
+					<!--End of Level-->
+
+					<!--Level-->
+					<TextBlock Name="txtCategory" Grid.Column="2" >
+						_category
+					</TextBlock>
+					<!--End of Level-->
+				</Grid>
+			</StackPanel>
+		</StackPanel>
+		<!--End of Game Information-->
+		
+		
+
+
+		<!--DataGrid-->
+		<DataGrid Name="gameBodyList" AutoGenerateColumns="False" CanUserAddRows="false"
+			Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="14" Grid.RowSpan="8">
+			<DataGrid.Columns>
+					<DataGridTextColumn Header="No." Width="25" Binding="{Binding QxnNo}"/>
+					<DataGridTextColumn Header="Question" Width="500*" Binding ="{Binding QuestionText}"/>
+					<!--<DataGridTextColumn Header="Answers" Width="300*"/>-->
+				<DataGridTemplateColumn Header="Answers"  Width="350" IsReadOnly="True">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<StackPanel Orientation="Vertical">                                
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Name= "Option1" Text = "{Binding Option1}" />
+									<CheckBox Name="chkOption1" IsChecked = "{Binding chkOption1}" Checked="op1_Checked" Unchecked="op1_Unchecked"/>
+								</StackPanel>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Name= "Option2" Text= "{Binding Option2}"/>
+									<CheckBox Name="chkOption2" IsChecked="{Binding chkOption2}" Checked="op2_Checked" Unchecked="op2_Unchecked"/>
+								</StackPanel>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Name= "Option3" Text= "{Binding Option3}"/>
+									<CheckBox Name="chkOption3"  IsChecked="{Binding chkOption3}" Checked="op3_Checked" Unchecked="op3_Unchecked"/>
+								</StackPanel>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Name= "Option4" Text="{Binding Option4}"/>
+									<CheckBox Name="chkOption4" IsChecked="{Binding chkOption4}" Checked="op4_Checked" Unchecked="op4_Unchecked"/>
+								</StackPanel>                       
+							</StackPanel>
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+
+			</DataGrid.Columns>
+		</DataGrid>
+		<!--End of DataGrid-->
+
+		<!--Utility Button-->
+		<StackPanel Orientation="Horizontal" 
+					Grid.Column="7" Grid.Row="10" Grid.ColumnSpan="8" FlowDirection="RightToLeft" Margin="0 5 0 0">
+			<Button Click="btnSubmit_Button_Click" Width="120" Content="Submit" Margin="0 0 5 0"/>
+		</StackPanel>
+		<!--End of Utility Buttons-->
+
+	</Grid>
+	
+</Page>
