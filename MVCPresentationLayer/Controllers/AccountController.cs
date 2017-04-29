@@ -73,6 +73,13 @@ namespace MVCPresentationLayer.Controllers
                 return View(model);
             }
 
+            //Check if user exists
+            var context = new ApplicationDbContext();
+            var user = context.Users.FirstOrDefault(x => x.Email == model.Email);
+
+            if (null != user)
+                model.Email = user.UserName;
+
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);

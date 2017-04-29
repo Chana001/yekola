@@ -44,11 +44,7 @@ namespace BusinessLogic
 
         public bool addNewCategory(Category category)
         {
-            bool result = false;
-            if (QuizAccessor.addNewCategory(category))
-            {
-                result = true;
-            }
+            bool result = QuizAccessor.addNewCategory(category);
 
             return result;
         }
@@ -64,11 +60,7 @@ namespace BusinessLogic
 
         public bool addNewLevel(Levels level)
         {
-            bool result = false;
-            if (QuizAccessor.addNewLevel(level))
-            {
-                result = true;
-            }
+            bool result = QuizAccessor.addNewLevel(level);
             return result;
         }
 
@@ -91,7 +83,7 @@ namespace BusinessLogic
             return playerSummary;
         }
 
-        public List<QuestionViewModel> getGameData(int levelId, string currentUser)
+        public List<QuestionViewModel> GetGameData(int? levelId, string currentUser)
         {
             var questionList = new List<QuestionViewModel>();
 
@@ -172,7 +164,7 @@ namespace BusinessLogic
         public decimal GradePlayer( List<QuestionViewModel> lstQuestionViewModelFromPlayer, PlayerLevelCategory playerLevelCategory   )
         {
             //Bring in questions based on player level category
-            List<QuestionViewModel> markingScheme = getGameData(playerLevelCategory.LevelId, "NonPlayer");
+            List<QuestionViewModel> markingScheme = GetGameData(playerLevelCategory.LevelId, "NonPlayer");
 
             //Player Question Index
             int count = 0;
@@ -235,5 +227,29 @@ namespace BusinessLogic
 
         }
 
+
+
+
+        public bool CheckPlay(int? userId, int? levelId)
+        {
+            int intUserId = userId ?? default(int);
+
+            var playerSummary = getPlayerGameSummary(intUserId);
+
+            foreach ( var a in playerSummary)
+            {
+                if (levelId == 3000)
+                {
+                    return true;
+                }
+
+                if (a.Unlocked == false)
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
     }
 }

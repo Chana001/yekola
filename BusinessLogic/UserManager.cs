@@ -103,6 +103,11 @@ namespace BusinessLogic
             return user;
         }
 
+        public List<UserRoles> GetUserRoles(int userId)
+        {
+            return UserAccessor.RetrieveUsersRoles(userId); 
+        }
+
 
         public User RetrieveUserByUsername ( string username )
         {

@@ -13,3 +13,8 @@ C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataObjects\bin\Debug\DataObjects.
 C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
 C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataObjects\obj\Debug\DataObjects.dll
 C:\Users\Mike T\Desktop\NATACHAILUNGA!\yekola\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Mike T\Desktop\CHANA'S Stuff\DotNetStuff\FINAL_PROJECT\yekola\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Mike T\Desktop\CHANA'S Stuff\DotNetStuff\FINAL_PROJECT\yekola\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Mike T\Desktop\CHANA'S Stuff\DotNetStuff\FINAL_PROJECT\yekola\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\Mike T\Desktop\CHANA'S Stuff\DotNetStuff\FINAL_PROJECT\yekola\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Mike T\Desktop\CHANA'S Stuff\DotNetStuff\FINAL_PROJECT\yekola\DataObjects\obj\Debug\DataObjects.pdb

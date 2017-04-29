@@ -93,7 +93,7 @@ namespace DataAccessLayer
             return new List<int>();
         }
 
-        public static List<PlayerLevelCategory> getPlayerSummary(int userId)
+        public static List<PlayerLevelCategory> getPlayerSummary(int? userId)
         {
             var playerSummary = new List<PlayerLevelCategory>();
             var conn = DBConnection.GetConnection();
@@ -135,7 +135,7 @@ namespace DataAccessLayer
             return playerSummary;
         }
 
-        public static List<Questions> getGameData(int levelId)
+        public static List<Questions> getGameData(int? levelId)
         {
             var questionList = new List<Questions>();
             var conn = DBConnection.GetConnection();

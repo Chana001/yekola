@@ -20,11 +20,12 @@ namespace BusinessLogic
 
         List<PlayerLevelCategory> getPlayerGameSummary(int userId);
 
-        List<QuestionViewModel> getGameData(int levelId, string currentUser);
+        List<QuestionViewModel> GetGameData(int? levelId, string currentUser);
 
         bool SetupPlayer(string username);
 
         decimal GradePlayer(List<QuestionViewModel> lstQuestionViewModelFromPlayer, PlayerLevelCategory playerLevelCategory);
 
+        bool CheckPlay(int? userId, int? levelId);
     }
 }

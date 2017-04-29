@@ -58,7 +58,7 @@ namespace PresentationLayer
 
             string currentUser = "Player";
 
-            _lstQuestionViewModel = quizManager.getGameData(_playerSummary.LevelId, currentUser);
+            _lstQuestionViewModel = quizManager.GetGameData(_playerSummary.LevelId, currentUser);
 
             if ( _lstQuestionViewModel.Count == 0 )
             {

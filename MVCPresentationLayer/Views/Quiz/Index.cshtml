@@ -6,14 +6,10 @@
 
 <ul>
     @foreach (var a in Model)
-    {
-        <li>
-            <label>@a.LevelId</label>
-            <label>@a.Level</label>
-            <label>@a.Unlocked</label>
-        </li>
+    {       
+        var myVal = a.Unlocked == false ? "Incomplete" : "Complete";
+        <li>@Html.ActionLink(@a.Level + " " + myVal, "MainQuiz", "Quiz", new {a.LevelId}, null)</li>
     }
-
 </ul>
 
 
