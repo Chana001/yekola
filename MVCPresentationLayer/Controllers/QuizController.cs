@@ -60,5 +60,11 @@ namespace MVCPresentationLayer.Controllers
 
             return gameData != null ? View(gameData) : View();
         }
+
+        [HttpPost]
+        public ActionResult SaveAnswer()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

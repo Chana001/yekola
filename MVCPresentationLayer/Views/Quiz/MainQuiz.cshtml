@@ -8,32 +8,10 @@
 
 <p>Welcome @User.Identity.Name</p>
 
-<ul>
-    @foreach (var a in Model)
-    {
-        <li>
-            <label>@a.QuestionText</label><br />
-            
-            <fieldset>
-            <div class="radio-inline">
-                <input type="radio" class="radio" name="a" value="y" id="a1"/>
-                <label for="a1">@a.Option1</label>
-                <br/>
-            </div>
-             <div class="radio-inline">
-                <input type="radio" class="radio" name="a" value="y" id="a2"/>
-                <label for="a2">@a.Option2</label>
-            </div>
-             <div class="radio-inline">
-                <input type="radio" class="radio" name="a" value="y" id="a3"/>
-                <label for="a3">@a.Option3</label>
-            </div>
-             <div class="radio-inline">
-                <input type="radio" class="radio" name="a" value="y" id="a4"/>
-                <label for="a4">@a.Option4</label>
-            </div>
-            </fieldset>
-        </li>
-    }
-</ul>
 
+@foreach (var a in Model)
+{
+    <hr/>
+    @Html.Partial("_QuestionPartial", a)
+    <hr/>
+}
