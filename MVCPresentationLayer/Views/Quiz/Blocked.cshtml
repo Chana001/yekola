@@ -4,6 +4,8 @@
     ViewBag.Title = "title";
 }
 
-<p>You haven't passed your exams. You won't play.</p>
+<div class="alert alert-danger" role="alert">
+    <p>You haven't passed your exams. You won't play</p>
+    @Html.ActionLink("Go Back To Summary", "Index", "Quiz" ,null, new { @class="alert-link"})
+</div>
 
-@Html.ActionLink("Go Back To Summary", "Index", "Quiz")

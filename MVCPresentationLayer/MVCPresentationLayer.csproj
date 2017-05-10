@@ -236,6 +236,8 @@
     <Content Include="Views\Quiz\MainQuiz.cshtml" />
     <Content Include="Views\Quiz\Blocked.cshtml" />
     <Content Include="Views\Shared\_QuestionPartial.cshtml" />
+    <Content Include="Views\Home\Submit.cshtml" />
+    <Content Include="Views\Home\IndexTemp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

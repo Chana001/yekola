@@ -8,40 +8,39 @@
 
 <p>Welcome @User.Identity.Name</p>
 
+<div class="row">
+    @foreach (var a in Model)
+    {
+        <hr />
+        @Html.Partial("_QuestionPartial", a)
+        <hr />
 
-@foreach (var a in Model)
-{
-    <hr/>
-    @Html.Partial("_QuestionPartial", a)
-    <hr/>
-
-    <script>
+        <script>
     $(document).ready(function () {
         var dc;
 
-        $("@Html.DisplayName("#" + a.QxnNo + "a")").click(function () {
-            dc = $('input[name=@a.QxnNo]:checked').val();
-            $('input[name=@Html.DisplayName( "ans" + @a.QxnNo)]').val(dc);
-
-            alert($('input[name=@Html.DisplayName(@a.QxnNo + "ans")]').val());
+        $("@Html.DisplayName("#" + a.QxnNo + "sbt")").click(function () {
+            $("@Html.DisplayName("#" + a.QxnNo + "sbt")").css("background-color", "red");
+                    @*dc = $('input[name=@a.QxnNo]:checked').val();*@
         });
 
-        $("@Html.DisplayName("#" + a.QxnNo + "b")").click(function () {
-            dc = $('input[name=@a.QxnNo]:checked').val();
-            alert(dc);
-        });
+        @*$("@Html.DisplayName("#" + a.QxnNo + "sbt")").click(function () {
+                    dc = $('input[name=@a.QxnNo]:checked').val();
+                });
 
-        $("@Html.DisplayName("#" + a.QxnNo + "c")").click(function () {
-            dc = $('input[name=@a.QxnNo]:checked').val();
-            alert(dc);
-        });
+                $("@Html.DisplayName("#" + a.QxnNo + "sbt")").click(function () {
+                    dc = $('input[name=@a.QxnNo]:checked').val();
+                });
 
-        $("@Html.DisplayName("#" + a.QxnNo + "d")").click(function () {
-            dc = $('input[name=@a.QxnNo]:checked').val();
-            alert(dc);
-        });
+                $("@Html.DisplayName("#" + a.QxnNo + "sbt")").click(function () {
+                    dc = $('input[name=@a.QxnNo]:checked').val();
+                });*@
 
     });
-</script>
+        </script>
     }
+</div>
+
+
+@Html.ActionLink("Submit", "Submit", "Home", null, new { @class = "btn btn-default"})
 

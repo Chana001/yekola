@@ -21,10 +21,9 @@ namespace MVCPresentationLayer.Controllers
         private readonly IQuizManager _quizManager = new QuizManager();
 
         // GET: Main Quiz View
-        //[Authorize]
+        [Authorize]
         public ActionResult Index()
         {
-            //get current user by context
             var username = User.Identity.GetUserName().ToUpper();
 
             var user = _userManager.RetrieveUserByUsername(username);

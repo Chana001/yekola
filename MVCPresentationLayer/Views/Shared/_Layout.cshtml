@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,7 +25,6 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("About", "About", "Home")</li>
                 <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 <li>@Html.ActionLink("Quiz", "Index", "Quiz")</li>
@@ -41,37 +40,6 @@
         <p>&copy; @DateTime.Now.Year - YEKOLA TECHNOLOGIES</p>
     </footer>
 </div>
-
-@*@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", required: false)*@
-
-@*<script>
-    $(document).ready(function () {
-        var dc;
-
-    $("#a").click(function () {
-        dc = $('input[name=Options]:checked').val();
-        alert(dc);
-    });
-
-    $("#b").click(function () {
-        dc = $('input[name=Options]:checked').val();
-        alert(dc);
-    });
-
-    $("#c").click(function () {
-        dc = $('input[name=Options]:checked').val();
-        alert(dc);
-    });
-
-    $("#d").click(function () {
-        dc = $('input[name=Options]:checked').val();
-        alert(dc);
-    });
-
-});
-</script>*@
     
 </body>
 </html>

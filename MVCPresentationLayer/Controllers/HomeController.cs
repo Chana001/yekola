@@ -26,5 +26,10 @@ namespace MVCPresentationLayer.Controllers
 
             return View();
         }
+
+        public ActionResult Submit()
+        {
+            return View();
+        }
     }
 }

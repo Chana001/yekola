@@ -4,10 +4,16 @@
     ViewBag.Title = "Main Quiz";
 }
 
-<ul>
-    @foreach (var a in Model)
-    {       
-        var myVal = a.Unlocked == false ? "Incomplete" : "Complete";
-        <li>@Html.ActionLink(@a.Level + " " + myVal, "MainQuiz", "Quiz", new {a.LevelId}, null)</li>
-    }
-</ul>
+<br/><br/>
+<div class="container row">
+    <div class="list-group col-md-12">
+        @foreach (var a in Model)
+        {
+            var myVal = a.Unlocked == false ? "Incomplete" : "Complete";
+            <button type="button" style="background-color: cadetblue; width:1150px;">@Html.ActionLink(@a.Level + " " + myVal, "MainQuiz", "Quiz", new { a.LevelId }, new { @class = "list-group-item list-group-item-info" })</button>
+            <br />
+        }
+    </div>
+</div>
+
+
