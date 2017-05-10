@@ -21,7 +21,7 @@ namespace MVCPresentationLayer.Controllers
         private readonly IQuizManager _quizManager = new QuizManager();
 
         // GET: Main Quiz View
-        [Authorize]
+        //[Authorize]
         public ActionResult Index()
         {
             //get current user by context
@@ -58,13 +58,23 @@ namespace MVCPresentationLayer.Controllers
                 return View("Error");
             }
 
-            return gameData != null ? View(gameData) : View();
+
+            //Give QxnAns unique values
+            foreach (var a in gameData)
+            {
+                a.StringAns = a.QxnNo + "ans";
+            }
+
+            return View(gameData);
         }
 
         [HttpPost]
-        public ActionResult SaveAnswer()
+        public ActionResult SaveAnswer(QuestionViewModel qx)
         {
-            throw new NotImplementedException();
+            var a = qx;
+
+            return RedirectToAction("Index") ;
+
         }
     }
 }

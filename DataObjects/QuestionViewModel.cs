@@ -27,5 +27,7 @@ namespace DataObjects
         public string Option4 { get; set; }
 
         public bool chkOption4 { get; set; }
+
+        public string StringAns { get; set; }
     }
 }

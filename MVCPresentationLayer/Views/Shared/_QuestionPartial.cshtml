@@ -1,30 +1,48 @@
 ﻿@model DataObjects.QuestionViewModel
 
 
-@using (Html.BeginForm("SaveAnswer", "Quiz") )
-{
-    <label>@Model.QuestionText</label><br />
- 
-    <fieldset>
-        <div class="radio-inline">
-            <input type="radio" class="radio" name="a" value="y" id="a1" />
-            <label for="a1">@Model.Option1</label>
-            <br />
-        </div>
-        <div class="radio-inline">
-            <input type="radio" class="radio" name="a" value="y" id="a2" />
-            <label for="a2">@Model.Option2</label>
-        </div>
-        <div class="radio-inline">
-            <input type="radio" class="radio" name="a" value="y" id="a3" />
-            <label for="a3">@Model.Option3</label>
-        </div>
-        <div class="radio-inline">
-            <input type="radio" class="radio" name="a" value="y" id="a4" />
-            <label for="a4">@Model.Option4</label>
-        </div>
-    </fieldset>
+<div id="question">
+    @using (Ajax.BeginForm("SaveAnswer", "Quiz", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "question" }))//Html.BeginForm("SaveAnswer", "Quiz") )
+    {
+        <label>@Model.QuestionText</label><br />
 
-    <input type="submit" id="saveAns" value="Save" />
-}
+        <fieldset>
+            
+            <div class="radio-inline">
+                <label>@Html.RadioButton( @Model.QxnNo.ToString(), @Model.QxnNo + "TrueA", new {@id= @Model.QxnNo + "a"}) @Model.Option1</label>
 
+                @*<input type="radio" class="radio" name="a" value="y" id="a1"/>
+                <label for="a1">@Model.Option1</label>*@
+                <br/>
+            </div>
+
+            <div class="radio-inline">
+                <label>@Html.RadioButton(@Model.QxnNo.ToString(), @Model.QxnNo + "TrueB", new { @id = @Model.QxnNo + "b" }) @Model.Option2</label>
+                @*<input type="radio" class="radio" name="a" value="y" id="a2"/>
+                <label for="a2">@Model.Option2</label>*@
+            </div>
+
+            <div class="radio-inline">
+                <label>@Html.RadioButton(@Model.QxnNo.ToString(), @Model.QxnNo + "TrueC", new { @id = @Model.QxnNo + "c" }) @Model.Option3</label>
+                @*<input type="radio" class="radio" name="a" value="y" id="a3"/>
+                <label for="a3">@Model.Option3</label>*@
+            </div>
+
+            <div class="radio-inline">
+                <label>@Html.RadioButton(@Model.QxnNo.ToString(), @Model.QxnNo + "TrueD", new { @id = @Model.QxnNo + "d" }) @Model.Option4</label>
+                @*<input type="radio" class="radio" name="a" value="y" id="a4"/>
+                <label for="a4">@Model.Option4</label>*@
+            </div>
+
+        </fieldset>
+        
+        @Html.HiddenFor(m => m.StringAns)
+       
+        
+        @*<input id="StringAns" name="@Html.DisplayName( "ans" + Model.QxnNo)" type="hidden" value="" />*@
+        @Html.HiddenFor(m=> m.QxnNo)
+        @Html.HiddenFor(m => m.QuestionText)
+
+        <input type="submit" id="saveAns" value="Save" />
+    }
+</div>
